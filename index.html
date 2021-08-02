@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Types of css
+    </title>
+    <link rel="stylesheet" href="css_types.css">
+    <style>
+    .internal{
+            background-color: rgb(238, 91, 238);
+            text-align: center;
+            font-size: 22px;
+            margin-left: 150px;
+            margin-right: 150px;
+            font-weight: medium;
+    }
+    #internalcss{
+        display: inline-block;
+        text-align: left;
+    }
+    </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size:35px; color: rgb(65, 8, 223);">TYPES OF STYLESHEETS</h1>
+        <div class="inline" style="background-color: lightskyblue; margin-left: 150px; margin-right: 150px; text-align:center; font-size: 22px;">
+        <h2 style="text-align: center;">
+            INLINE STYLESHEET
+        </h2>
+        <p style="font-size: 22px;">
+            Inline style sheets is a term that refers to style sheet information being applied to the current element.<br> 
+            By this, I mean that instead of defining the style once, then applying the style against all instances of an element<br> you only apply the style to the instance
+            you want the style to apply to.It has the highest priority among the style sheets.<br>Inline CSS allows you to apply a unique style to one HTML element at a time.
+             You assign<br> CSS to a specific HTML element by using the style attribute with any CSS properties defined within it.
+        </p>
+        <ul style="display: inline-block; font-size: 22px; text-align: left;">
+            <li>
+                p style="font-size: 18px;"
+            </li>
+            <li>
+                 h1 style="color: blue;"
+            </li>
+            <li>
+                body style="width: 100%; display: inline-block;"
+            </li>
+            <li>
+                 h2 style="font-family: sans-serif;"
+            </li>
+        </ul>
+        </div>
+        <div class="internal">
+            <h2>
+                INTERNAL STYLESHEET
+            </h2>
+            <p>
+                An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the head<br>
+                section of an HTML page, within a style element.An internal style sheet may be used if one single<br> HTML page has a unique style.
+                 The internal style is defined inside the style element,<br> inside the head section.It has the second highest priority among the three stylesheets.
+                 <br>It is embedded within the html file
+            </p>
+            <ul id="internalcss">
+                <li>
+                    .intern{
+                        height:100px;
+                        width:100%;
+                        font-size:20px
+                    }
+                </li>
+                <li>
+                    #intern{
+                        display:block;
+                        text-align:center;
+                    }
+                </li>
+                <li>
+                    h2{
+                        background-color:white;
+                        font-family:serif;
+                    }
+                </li>
+                <li>
+                    p,h1{
+                        font-size:22px;
+                        font-weight:medium;
+                    }
+                </li>
+            </ul>
+        </div>
+        <div class="external">
+            <h2>
+                EXTERNAL STYLESHEET
+            </h2>
+            <p>    
+            An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage.<br> 
+            Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed<br> within the head section of the page.
+            It has the lowest priority among the stylesheets.The external style sheet is generally<br> used when you want to make changes on multiple pages. 
+            It is ideal for this condition because it facilitates you <br>to change the look of the entire web site by changing just one file.
+            </p>
+            <pre>
+            link rel="stylesheet" href="style.css"
+            style.css
+            .external{
+                color:violet;
+                font-size:20px;
+                width:100%;
+                font-family:serif;
+            }
+        </pre>
+        </div>
+    </body>
+</html>

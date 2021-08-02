@@ -1,0 +1,11 @@
+.external{
+    text-align: center;
+    background-color: aqua;
+    font-size: 22px;
+    margin-left:150px ;
+    margin-right: 150px;
+    font-weight: medium;
+}
+pre{
+    text-align: center;
+}
